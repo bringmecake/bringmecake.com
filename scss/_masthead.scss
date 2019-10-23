@@ -1,0 +1,66 @@
+header.masthead {
+  position: relative;
+  background: url('../img/bg-cake.jpg') no-repeat center center;
+  @include background-cover;
+  background-position-y: bottom -11em;
+  background-color: #a2deec;
+  padding-top: 2rem;
+  padding-bottom: 10rem;
+  color: black;
+
+  @include media-breakpoint-up(sm) {
+    background-position-y: bottom -25em;
+  }
+
+  @include media-breakpoint-up(md) {
+    padding-top: 4rem;
+    background-image: url('../img/bg-cake-horizontal.jpg');
+    background-position-y: top 0;
+    background-position-x: right -15em;
+  }
+
+  @include media-breakpoint-up(lg) {
+    @include background-cover;
+    background-image: url('../img/bg-bigcake.jpg');
+    background-position-x: right 0;
+  }
+
+  h1 {
+    font-family: Abril-Fatface, Arial, Helvetica, sans-serif;
+    color: inherit;
+    line-height: 1.3em;
+    
+    span {
+      position: relative; 
+      z-index: 0;
+
+      &:after {
+        content: ' ';
+        display: block;
+        background:#ffe000;
+        position: absolute;
+        top: .55em;
+        left: -0.1em;
+        width: 103%;
+        z-index: -1;
+        height: 0.9em;
+
+        @media (max-width: 344px) {
+          display: none;
+        }
+      }
+    }
+  }
+
+  .content {
+    color: inherit;
+    line-height: 1.8em;
+    font-size: 1.2em;
+    text-shadow: 0 0 2px #9fddeb, 1px 1px 3px #9fddeb, -1px -1px 3px #9fddeb;
+  }
+
+  .btn {
+    font-size: 0.9em;
+    padding: 0.5em 2em;
+  }
+}
