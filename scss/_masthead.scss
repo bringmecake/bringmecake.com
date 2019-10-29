@@ -2,14 +2,15 @@ header.masthead {
   position: relative;
   background: url('../img/bg-cake.jpg') no-repeat center center;
   @include background-cover;
-  background-position-y: bottom -11em;
+  background-position: -2em 13em;
   background-color: #a2deec;
   padding-top: 2rem;
   padding-bottom: 10rem;
   color: black;
+  min-height: 700px;
 
   @include media-breakpoint-up(sm) {
-    background-position-y: bottom -25em;
+    background-position: 0 0;
   }
 
   @include media-breakpoint-up(md) {
@@ -39,7 +40,7 @@ header.masthead {
         display: block;
         background:#ffe000;
         position: absolute;
-        top: .55em;
+        top: .50em;
         left: -0.1em;
         width: 103%;
         z-index: -1;
@@ -62,5 +63,6 @@ header.masthead {
   .btn {
     font-size: 0.9em;
     padding: 0.5em 2em;
+    border-radius: 2em;
   }
 }

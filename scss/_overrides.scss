@@ -60,6 +60,10 @@ h3 {
     color: #000;
     min-height: 5em;
 
+    @include media-breakpoint-up(lg) {
+        background-attachment: fixed;
+    }
+
     h3 {
         color: inherit;
         font-weight: bold;
