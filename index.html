@@ -39,7 +39,7 @@
         <div class="row">
           <div class="col-12 col-sm-9 col-md-6 col-lg-5">
             <h1 class="mb-4 mb-md-5">
-              <span>Hello bakers, we're</span> <br>
+              <span>Hello Bakers! We're</span> <br>
               <span>working on something</span> <br>
               <span>exciting for you...</span>
             </h1>
@@ -168,6 +168,12 @@
               scrollTop: $(hash).offset().top
             }, 500);
           }
+        });
+
+        $('iframe').load(function(){
+          $('html,body').animate({
+            scrollTop: 0
+          }, 'slow');
         });
       });
     </script>
