@@ -121,11 +121,11 @@
     </section>
 
     <!-- Call to Action -->
-    <section class="text-center py-5" id=contact>
+    <section class="text-center py-5">
       <div class="container">
         <div class="row">
           <div class="col-xl-9 mx-auto">
-            <h3>Get in Touch</h3>
+            <h3 id="contact">Get in Touch</h3>
             <h1 class="mt-4 mb-5">Contact Us</h1>
             <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScFI3tXpaX41Jgajc5S4m2Grxfxhh2TjPsS0IrCcYh5rrYkbQ/viewform?embedded=true" width="100%" height="1303" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
           </div>
@@ -162,7 +162,6 @@
       $(document).ready(function(){
         $("a.contact-link").on('click', function(event) {
           if (this.hash !== "") {
-            event.preventDefault();
             var hash = this.hash;
             $('#contact').animate({
               scrollTop: $(hash).offset().top
